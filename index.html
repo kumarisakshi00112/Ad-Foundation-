@@ -382,33 +382,64 @@ section p{
 }
 
 .memory-design{
+    width:100%;
     min-height:370px;
     border-radius:30px;
-    background:radial-gradient(
-        circle at 50% 35%,
-        #e9b45d,
-        #142a55 55%
-    );
+    overflow:hidden;
+    background:#142a55;
 
     display:flex;
-    flex-direction:column;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 
-    color:white;
-    text-align:center;
+    box-shadow:0 15px 35px rgba(20,42,85,0.15);
 }
 
-.memory-design span{
-    font-family:Georgia,serif;
-    font-size:25px;
-    line-height:1.2;
+.memory-design img{
+    width:100%;
+    height:100%;
+    min-height:370px;
+
+    display:block;
+
+    object-fit:contain;
+    object-position:center;
+
+    background:#142a55;
 }
 
-.memory-design strong{
-    font-size:90px;
-    line-height:1;
-    margin-top:10px;
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:800px){
+
+    .memory-design{
+        min-height:330px;
+        border-radius:25px;
+    }
+
+    .memory-design img{
+        min-height:330px;
+        object-fit:contain;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .memory-design{
+        min-height:300px;
+        border-radius:22px;
+    }
+
+    .memory-design img{
+        min-height:300px;
+        object-fit:contain;
+    }
+
+}
 }
 
 
