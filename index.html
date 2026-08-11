@@ -478,8 +478,12 @@ section p{
     width:100%;
     height:100%;
     display:block;
-    object-fit:cover;
+
+    /* PHOTO WILL NOT BE CUT */
+    object-fit:contain;
     object-position:center;
+
+    background:#edf2fb;
 }
 
 /* TABLET */
@@ -508,7 +512,7 @@ section p{
     .gallery-box img{
         width:100%;
         height:100%;
-        object-fit:cover;
+        object-fit:contain;
         object-position:center;
     }
 
