@@ -438,7 +438,52 @@ section p{
     font-size:14px;
 }
 
+/* =========================
+   PROGRAM VIDEO
+========================= */
 
+.program-video{
+    width:100%;
+    height:200px;
+    margin-bottom:18px;
+    border-radius:14px;
+    overflow:hidden;
+    background:#edf2fb;
+}
+
+.program-video video{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
+
+/* TABLET */
+@media(max-width:800px){
+
+    .program-video{
+        height:190px;
+    }
+
+}
+
+
+/* MOBILE */
+@media(max-width:520px){
+
+    .program-video{
+        height:200px;
+        border-radius:12px;
+    }
+
+    .program-video video{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+}
 /* =========================
    MEMORY
 ========================= */
