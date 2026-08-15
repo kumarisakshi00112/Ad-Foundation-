@@ -860,7 +860,280 @@ footer{
         font-size:70px;
     }
 }
+/* =========================
+   FINAL RESPONSIVE CSS
+========================= */
 
+/* TABLET */
+@media (max-width: 800px){
+
+    .container{
+        width:92%;
+    }
+
+    .navbar{
+        min-height:65px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+
+    .logo img{
+        width:48px;
+        height:48px;
+    }
+
+    .hero-content,
+    .about-grid,
+    .founder-grid,
+    .memory-grid,
+    .contact-box{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-box{
+        padding:30px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width:520px){
+
+    .container{
+        width:92%;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+    /* HEADER */
+
+    .navbar{
+        min-height:62px;
+    }
+
+    .logo{
+        font-size:17px;
+        gap:7px;
+    }
+
+    .logo img{
+        width:42px;
+        height:42px;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:26px;
+    }
+
+    .nav-links{
+        top:62px;
+        padding:18px 6%;
+    }
+
+
+    /* HERO */
+
+    .hero{
+        padding:50px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-text{
+        font-size:16px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+
+    /* MEMORY CARD */
+
+    .memory-card{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .memory-photo{
+        height:220px;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid{
+        gap:30px;
+    }
+
+    .story-box{
+        padding:25px;
+    }
+
+    .quote{
+        font-size:23px;
+    }
+
+
+    /* FOUNDER */
+
+    .founder-photo{
+        height:380px;
+        border-radius:22px;
+    }
+
+    .founder-content h2{
+        font-size:32px;
+    }
+
+
+    /* PROGRAMS */
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .program-video{
+        height:200px;
+    }
+
+
+    /* MEMORY */
+
+    .memory-grid{
+        gap:30px;
+    }
+
+    .memory-design{
+        min-height:280px;
+        border-radius:20px;
+    }
+
+    .memory-design img{
+        min-height:280px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .gallery-box{
+        aspect-ratio:16 / 10;
+        height:auto;
+    }
+
+    .gallery-box img{
+        object-fit:contain;
+    }
+
+
+    /* ADMISSION */
+
+    .admission-box{
+        padding:20px;
+    }
+
+    .admission-form{
+        grid-template-columns:1fr;
+    }
+
+
+    /* CONTACT */
+
+    .contact-box{
+        padding:22px;
+        gap:25px;
+    }
+
+    .map-box{
+        padding:12px;
+    }
+
+    .map-box iframe{
+        height:240px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content{
+        text-align:center;
+        align-items:center;
+    }
+
+}
+
+
+/* VERY SMALL MOBILE */
+@media (max-width:380px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    .logo{
+        font-size:15px;
+    }
+
+    .logo img{
+        width:38px;
+        height:38px;
+    }
+
+    .memory-photo{
+        height:190px;
+    }
+
+    .founder-photo{
+        height:330px;
+    }
+
+}
 </style>
 </head>
 
@@ -954,7 +1227,15 @@ future-ready skills and build confidence for a better
 tomorrow.
 
 </p>
+<!-- WELCOME VIDEO -->
+<div class="home-video">
 
+    <video autoplay muted loop playsinline controls>
+        <source src="welcome.mp4" type="video/mp4">
+        Your browser does not support the video.
+    </video>
+
+</div>
 
 <div class="buttons">
 
