@@ -860,87 +860,12 @@ footer{
         font-size:70px;
     }
 }
-/* =========================
-   RESPONSIVE WELCOME VIDEO
-========================= */
 
-.welcome-video{
-    width:100%;
-    height:clamp(300px, 100vh, 900px);
-    overflow:hidden;
-    background:#000;
-    position:relative;
-}
-
-.welcome-video video{
-    width:100%;
-    height:100%;
-    display:block;
-    object-fit:cover;
-    object-position:center;
-}
-
-/* Large Desktop */
-@media (min-width:1200px){
-
-    .welcome-video{
-        height:100vh;
-        max-height:900px;
-    }
-
-}
-
-/* Laptop / Small Desktop */
-@media (min-width:801px) and (max-width:1199px){
-
-    .welcome-video{
-        height:85vh;
-        min-height:500px;
-    }
-
-}
-
-/* Tablet */
-@media (min-width:521px) and (max-width:800px){
-
-    .welcome-video{
-        height:75vh;
-        min-height:420px;
-    }
-
-}
-
-/* Mobile */
-@media (max-width:520px){
-
-    .welcome-video{
-        height:70vh;
-        min-height:300px;
-        max-height:650px;
-    }
-
-    .welcome-video video{
-        object-fit:cover;
-        object-position:center;
-    }
-
-}
 </style>
 </head>
 
 
 <body>
-<!-- =========================
-     WELCOME VIDEO
-========================= -->
-
-<section class="welcome-video">
-
-    <video autoplay muted playsinline>
-        <source src="welcome.mp4" type="video/mp4">
-    </video>
-
-</section>
 
 <!-- =========================
      HEADER
